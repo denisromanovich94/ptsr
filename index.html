@@ -1,356 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge to calm - PTSD Support & Recovery</title>
-    <meta name="description" content="Professional support and resources for individuals with PTSD. Get help, find community, and start your recovery journey with Bridge to calm.">
-    <link rel="stylesheet" href="styles.css">
+    <title>Bridge to Calm - Психологическая помощь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <img src="img/logo.jpg" alt="">
-                </div>
-                <nav class="nav" id="nav">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#services" class="nav-link">Services</a></li>
-                        <li><a href="#partners" class="nav-link">Partners</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="emergency-btn">
-                    <a href="#crisis-help" class="btn btn-emergency">Crisis Help</a>
-                </div>
-                <button class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                </svg>
+                <span>Bridge to Calm</span>
             </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">О проекте</a>
+                <a href="#how-it-works" class="nav-link">Как работаем</a>
+                <a href="#who-we-help" class="nav-link">Кому помогаем</a>
+                <a href="#psychologists" class="nav-link">Психологам</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">You Are Not Alone in Your Recovery</h1>
-                    <p class="hero-description">
-                        Bridge to calm provides comprehensive support, resources, and professional guidance 
-                        for individuals living with PTSD. Take the first step towards healing today.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#services" class="btn btn-primary">Get Support</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>5,000+</h3>
-                        <p>People Helped</p>
-                    </div>
-                    <div class="stat">
-                        <h3>24/7</h3>
-                        <p>Support Available</p>
-                    </div>
-                    <div class="stat">
-                        <h3>15+</h3>
-                        <p>Years of Service</p>
-                    </div>
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <img src="scaled.jpg" alt="Support and hope" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Bringing Peace of Mind to Those Affected by War</h1>
+                <p class="hero-subtitle">Бесплатная психологическая помощь для русскоговорящих людей с ПТСР в Израиле</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" data-action="donate">Поддержать проект</button>
+                    <button class="btn btn-secondary" data-action="help">Нужна помощь?</button>
+                    <button class="btn btn-outline" data-action="join">Присоединиться как психолог</button>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 13L12 18L17 13M7 6L12 11L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="section" id="about">
         <div class="container">
             <div class="section-header">
-                <h2>About bridge to calm</h2>
-                <p>Dedicated to healing, hope, and recovery for everyone affected by PTSD</p>
+                <h2 class="section-title">Почему мы существуем</h2>
+                <p class="section-subtitle">Реальная помощь в трудное время</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>
-                        Bridge to calm is committed to providing comprehensive support, evidence-based treatment, 
-                        and community resources for individuals living with Post-Traumatic Stress Disorder (PTSD). 
-                        We believe that everyone deserves access to quality mental health care and the opportunity to heal.
-                    </p>
-                    <div class="mission-points">
-                        <div class="point">
-                            <div class="point-icon">🤝</div>
-                            <div class="point-text">
-                                <h4>Compassionate Support</h4>
-                                <p>Providing empathetic, non-judgmental assistance to all who seek help</p>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <div class="point-icon">🎯</div>
-                            <div class="point-text">
-                                <h4>Evidence-Based Treatment</h4>
-                                <p>Utilizing proven therapeutic approaches and cutting-edge research</p>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <div class="point-icon">🌟</div>
-                            <div class="point-text">
-                                <h4>Community Building</h4>
-                                <p>Creating safe spaces for connection, understanding, and shared healing</p>
-                            </div>
-                        </div>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <h3>Кризис ПТСР</h3>
+                    <p>После недавних войн тысячи людей в Израиле страдают от посттравматического стрессового расстройства</p>
                 </div>
-                <div class="about-image">
-                    <img src="img/1.jpg" alt="Support group therapy session" loading="lazy">
+                <div class="about-item">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M17 8L21 12M21 12L17 16M21 12L7 12M13 16V19C13 20.1046 12.1046 21 11 21H4C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H11C12.1046 3 13 3.89543 13 5V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Языковой барьер</h3>
+                    <p>Многие русскоговорящие израильтяне не могут получить должную помощь из-за языковых барьеров</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 9V13M12 17H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Перегруженная система</h3>
+                    <p>Система общественного здравоохранения перегружена и не справляется с потоком обращений</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12L10 14L16 8M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Наше решение</h3>
+                    <p>Мы предлагаем онлайн поддержку через Discord — бесплатную, быструю и эффективную</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- How It Works Section -->
+    <section class="section section-alt" id="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive care tailored to your unique journey</p>
+                <h2 class="section-title">Как это работает</h2>
+                <p class="section-subtitle">Простой процесс получения помощи</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💬</div>
-                    <h3>Individual Therapy</h3>
-                    <p>One-on-one sessions with licensed therapists specializing in trauma and PTSD treatment using evidence-based approaches.</p>
-                    <ul>
-                        <li>EMDR Therapy</li>
-                        <li>Cognitive Behavioral Therapy</li>
-                        <li>Trauma-Focused Therapy</li>
-                    </ul>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Обращение</h3>
+                        <p>Люди, нуждающиеся в помощи, связываются с нами через удобные каналы связи</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">👥</div>
-                    <h3>Group Support</h3>
-                    <p>Connect with others who understand your experience in our facilitated support groups and peer-led communities.</p>
-                    <ul>
-                        <li>Weekly Support Groups</li>
-                        <li>Peer Mentorship Program</li>
-                        <li>Family Support Groups</li>
-                    </ul>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Подбор специалиста</h3>
+                        <p>Мы подбираем лицензированного русскоговорящего психолога из Украины или России</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🚨</div>
-                    <h3>Crisis Support</h3>
-                    <p>24/7 crisis intervention services for immediate help during mental health emergencies and acute episodes.</p>
-                    <ul>
-                        <li>24/7 Hotline</li>
-                        <li>Emergency Response Team</li>
-                        <li>Crisis Counseling</li>
-                    </ul>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Терапия</h3>
+                        <p>Проводятся индивидуальные или групповые сеансы терапии через Discord</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📚</div>
-                    <h3>Educational Resources</h3>
-                    <p>Access comprehensive educational materials, workshops, and training programs for individuals and families.</p>
-                    <ul>
-                        <li>Online Learning Modules</li>
-                        <li>Workshops & Seminars</li>
-                        <li>Resource Library</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Housing Assistance</h3>
-                    <p>Support finding stable housing solutions and temporary accommodation for those in need during recovery.</p>
-                    <ul>
-                        <li>Transitional Housing</li>
-                        <li>Housing Navigation</li>
-                        <li>Financial Assistance</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Employment Support</h3>
-                    <p>Career counseling, job placement assistance, and workplace accommodation guidance for sustainable employment.</p>
-                    <ul>
-                        <li>Career Counseling</li>
-                        <li>Job Placement Services</li>
-                        <li>Workplace Advocacy</li>
-                    </ul>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Результат</h3>
+                        <p>Быстрая поддержка без бюрократии и длительных ожиданий</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="partners" id="partners">
+    <!-- Why It Matters Section -->
+    <section class="section" id="why-matters">
         <div class="container">
             <div class="section-header">
-                <h2>Our Partners</h2>
-                <p>Working together to provide comprehensive care and support</p>
+                <h2 class="section-title">Зачем это нужно</h2>
+                <p class="section-subtitle">Статистика, которую нельзя игнорировать</p>
             </div>
-            <div class="partners-content">
-                <div class="partners-text">
-                    <p>
-                        Bridge to calm collaborates with leading healthcare institutions, government agencies, 
-                        and community organizations to ensure comprehensive, accessible care for all our clients. 
-                        Our partnerships enable us to provide a full spectrum of services and resources.
-                    </p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1 из 3</div>
+                    <p>русскоговорящих израильтян показывает симптомы ПТСР</p>
                 </div>
-                <div class="partners-grid">
-                    <div class="partner-category">
-                        <h3>Healthcare Partners</h3>
-                        <div class="partner-logos">
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Metropolitan Hospital System</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Regional Medical Centers</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Community Health Network</span>
-                            </div>
-                        </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <div class="partner-category">
-                        <h3>Government Agencies</h3>
-                        <div class="partner-logos">
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Department of Health</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Veterans Affairs</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Mental Health Services</span>
-                            </div>
-                        </div>
+                    <p>Нелеченная травма приводит к депрессии, зависимости и суициду</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 4.5V19.5M19.5 12H4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
                     </div>
-                    <div class="partner-category">
-                        <h3>Community Organizations</h3>
-                        <div class="partner-logos">
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Community Support Centers</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Educational Institutions</span>
-                            </div>
-                            <div class="partner-logo">
-                                <img src="img/2.jpg" alt="Metropolitan Hospital" loading="lazy">
-                                <span>Faith-Based Organizations</span>
-                            </div>
+                    <p>Мы предлагаем доступное, масштабируемое и человечное решение</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help Section -->
+    <section class="section section-alt" id="who-we-help">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Кому мы помогаем</h2>
+                <p class="section-subtitle">Наша помощь доступна всем нуждающимся</p>
+            </div>
+            <div class="help-grid">
+                
+                <div class="help-item">
+                    <img src="Feeling_Blue-pana.svg" alt="Выжившие в войне" class="help-image">
+                    <h3>Выжившие в войне</h3>
+                    <p>Те, кто пережил военные действия и их последствия</p>
+                </div>
+                <div class="help-item">
+                    <img src="Psychologist-pana.svg" alt="Семьи военных" class="help-image">
+                    <h3>Семьи военных</h3>
+                    <p>Родственники и близкие военнослужащих</p>
+                </div>
+                <div class="help-item">
+                    <img src="Questions-amico.svg" alt="Дети и родители" class="help-image">
+                    <h3>Дети и родители</h3>
+                    <p>Семьи с детьми, пострадавшие от травматических событий</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section" id="vision">
+        <div class="container">
+            <div class="vision-content">
+                <h2 class="section-title">Наша миссия</h2>
+                <div class="vision-grid">
+                    <div class="vision-item">
+                        <div class="vision-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 15.3579 14.6421 13 12 13C9.35786 13 7 15.3579 7 18V20M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 11.2091 9.79086 13 12 13ZM19 9C19 10.1046 18.1046 11 17 11C15.8954 11 15 10.1046 15 9C15 7.89543 15.8954 7 17 7C18.1046 7 19 7.89543 19 9ZM9 9C9 10.1046 8.10457 11 7 11C5.89543 11 5 10.1046 5 9C5 7.89543 5.89543 7 7 7C8.10457 7 9 7.89543 9 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
+                        <h3>5,000+ людей</h3>
+                        <p>Поддерживать более 5,000 человек каждый месяц</p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>100+ терапевтов</h3>
+                        <p>Команда из 100+ терапевтов по всему миру</p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Снижение нагрузки</h3>
+                        <p>Облегчить нагрузку на израильскую систему здравоохранения</p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Предотвращение</h3>
+                        <p>Предотвратить потерю целого поколения жертв травм</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-alt" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы</h2>
+                <p class="section-subtitle">Истории тех, кому мы помогли</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" fill="currentColor"/>
+                            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <blockquote>"Моя мать наконец спит по ночам."</blockquote>
+                    <cite>Анонимно</cite>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" fill="currentColor"/>
+                            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <blockquote>"После нескольких сеансов у меня прекратились панические атаки."</blockquote>
+                    <cite>Анонимно</cite>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" fill="currentColor"/>
+                            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <blockquote>"Они спасли мою семью."</blockquote>
+                    <cite>Анонимно</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Psychologists Section -->
+    <section class="section" id="psychologists">
+        <div class="container">
+            <div class="psychologists-content">
+                <div class="psychologists-text">
+                    <h2 class="section-title">Психологам</h2>
+                    <p class="section-subtitle">Присоединяйтесь к нашей международной команде</p>
+                    <ul class="benefits-list">
+                        <li>Работайте удаленно с полной гибкостью</li>
+                        <li>Получите полную поддержку нашей команды</li>
+                        <li>Станьте частью важной миссии</li>
+                        <li>Помогите тысячам людей</li>
+                    </ul>
+                    <button class="btn btn-primary" data-action="apply">Подать заявку</button>
+                </div>
+                <div class="psychologists-image">
+                    <img src="Mental_health-pana.svg" alt="Психолог за работой" class="section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding Section -->
+    <section class="section section-alt" id="funding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Финансовая открытость</h2>
+                <p class="section-subtitle">Каждый доллар имеет значение</p>
+            </div>
+            <div class="funding-grid">
+                <div class="funding-item">
+                    <div class="funding-amount">$25</div>
+                    <p>= 1 сеанс терапии</p>
+                </div>
+                <div class="funding-item">
+                    <div class="funding-amount">$2,000</div>
+                    <p>= 1 психолог на полную ставку в месяц</p>
+                </div>
+                <div class="funding-item">
+                    <div class="funding-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12H15M9 16H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p>Мы публикуем ежемесячные отчеты</p>
+                    <button class="btn btn-outline btn-small">Посмотреть бюджет</button>
+                </div>
+            </div>
+            <div class="funding-cta">
+                <button class="btn btn-primary" data-action="donate-monthly">Стать постоянным донором</button>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="section" id="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get Help Today</h2>
-                <p>Reach out for support - we're here for you</p>
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Мы всегда готовы помочь</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card crisis" id="crisis-help">
-                        <h3>🚨 Crisis Support</h3>
-                        <p>If you're in immediate danger or having thoughts of self-harm:</p>
-                        <div class="emergency-contacts">
-                            <a href="tel:988" class="emergency-link">
-                                <strong>988</strong> - Suicide & Crisis Lifeline
-                            </a>
-                            <a href="tel:911" class="emergency-link">
-                                <strong>911</strong> - Emergency Services
-                            </a>
-                            <a href="tel:+1-800-273-8255" class="emergency-link">
-                                <strong>1-800-HOPE-123</strong> - Our 24/7 Crisis Line
-                            </a>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <div class="contact-card">
-                        <h3>📞 General Support</h3>
-                        <div class="contact-details">
-                            <p><strong>Phone:</strong> (555) 123-HOPE</p>
-                            <p><strong>Email:</strong> support@hopefoundation.org</p>
-                            <p><strong>Hours:</strong> Mon-Fri 8AM-8PM, Weekends 10AM-6PM</p>
-                        </div>
+                    <h3>Email</h3>
+                    <p>bridge.t.calm@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="48" height="48">
+  <path fill="#ffffff" d="M100.1 144.5l48.2 35.6c5.5 3 9.5 1.5 10.9-5.1l19.7-92.8c2-8.2-3.1-11.9-8.4-9.5l-115.8 44.7c-7.9 3.1-7.8 7.4-1.4 9.3l29.6 9.2 68.7-43.3c3.3-2.1 6.4-.9 3.9 1.4"/>
+</svg>
                     </div>
-                    <div class="contact-card">
-                        <h3>📍 Visit Us</h3>
-                        <div class="contact-details">
-                            <p><strong>Main Office:</strong><br>
-                            123 Hope Street<br>
-                            Mental Health District<br>
-                            City, State 12345</p>
-                            <p><strong>Parking:</strong> Free on-site parking available</p>
-                        </div>
+                    <h3>Telegram</h3>
+                    <p>@Buianovich</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M18 2H16L16 8L18 6L20 8L20 2H18Z" fill="currentColor"/>
+                            <path d="M21 8V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V8C3 5.79086 4.79086 4 7 4H17C19.2091 4 21 5.79086 21 8Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">TikTok</a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <form id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (Optional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a topic</option>
-                                <option value="support">Seeking Support</option>
-                                <option value="information">General Information</option>
-                                <option value="volunteer">Volunteer Opportunities</option>
-                                <option value="donation">Donation Inquiry</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <span class="checkmark"></span>
-                                I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to be contacted
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" data-action="donate">Стать донором</button>
+                <button class="btn btn-secondary" data-action="volunteer">Стать волонтером</button>
+                <button class="btn btn-outline" data-action="partner">Партнерство</button>
             </div>
         </div>
     </section>
@@ -359,63 +404,23 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Bridge to calm</h3>
-                    <p>Providing compassionate support and evidence-based treatment for individuals living with PTSD.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="LinkedIn">💼</a>
-                    </div>
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <span>Bridge to Calm</span>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#partners">Partners</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Crisis Resources</a></li>
-                        <li><a href="#">Educational Materials</a></li>
-                        <li><a href="#">Support Groups</a></li>
-                        <li><a href="#">Professional Training</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="#">Volunteer</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Events</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-legal">
-                    <p>&copy; 2025 Bridge to calm. All rights reserved.</p>
-                    <div class="legal-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Accessibility</a>
-                    </div>
-                </div>
-                <div class="footer-disclaimer">
-                    <p><small>
-                        If you are experiencing a mental health emergency, please call 911 or go to your nearest emergency room. 
-                        Bridge to calm services are not a substitute for emergency medical care.
-                    </small></p>
+                <div class="footer-copy">
+                    <p>&copy; 2025 Bridge to Calm</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
